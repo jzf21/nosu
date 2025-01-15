@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-
+import React, { useState, useEffect,useRef } from "react";
+import cat from "../../assets/cat.gif";
+import song from "../../assets/oeea.mp3";
 const TimerProgressBar = ({ duration, onTimeUp }) => {
   const [progress, setProgress] = useState(100);
 
@@ -43,6 +44,8 @@ const DynamicQuiz = () => {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const QUESTION_DURATION = 10000; // 10 seconds per question
 
+
+    
   const handleTimeUp = () => {
     if (!selectedAnswer) {
       setFeedbackMessage("Time's up!");
@@ -129,6 +132,7 @@ const DynamicQuiz = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
             Generate Your Quiz
           </h2>
+          
           <form onSubmit={handleGenerateQuiz} className="space-y-4">
             <input
               type="text"
@@ -163,6 +167,11 @@ const DynamicQuiz = () => {
               {quizData.description}
             </p>
           </div>
+          <img
+            src={cat}
+            alt="cat"
+            className="absolute bottom-0 right-0 w-40 h-40"
+          />
 
           <div className="relative z-10 mt-8 w-full max-w-2xl bg-[#1b263b] p-6 rounded-lg shadow-lg">
             <TimerProgressBar
