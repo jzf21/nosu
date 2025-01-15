@@ -1,0 +1,114 @@
+body {
+    background-color: #eaf6ff;
+    color: #1f3a93;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    background-color: #ffffff;
+    border: 1px solid #d6e4f2;
+    box-shadow: 0 4px 8px rgba(31, 58, 147, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.quiz-title {
+    color: #1f3a93;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.quiz-description {
+    color: #2e86c1;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question-container {
+    margin: 20px 0;
+}
+
+.question-text {
+    color: #1a5276;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-btn {
+    background-color: #d6eaf8;
+    border: 1px solid #aed6f1;
+    border-radius: 5px;
+    color: #1f3a93;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.option-btn:hover {
+    background-color: #85c1e9;
+    transform: scale(1.02);
+}
+
+.option-btn.selected {
+    background-color: #3498db;
+    color: white;
+}
+
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.next-btn,
+.submit-btn {
+    background-color: #21618c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.next-btn:hover,
+.submit-btn:hover {
+    background-color: #1b4f72;
+    transform: scale(1.05);
+}
+
+.next-btn:disabled,
+.submit-btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 15px;
+    }
+
+    .quiz-title {
+        font-size: 20px;
+    }
+
+    .question-text,
+    .option-btn,
+    .next-btn,
+    .submit-btn {
+        font-size: 14px;
+    }
+}

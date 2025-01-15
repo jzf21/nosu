@@ -1,0 +1,15 @@
+.fulls
+{
+    height: 1560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textTop{
+    position: absolute;
+   bottom: 27%;
+}
+
+
+  

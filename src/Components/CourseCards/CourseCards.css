@@ -1,0 +1,25 @@
+.card {
+    background-color: #3b82f6; /* Blue */
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+}
+
+.card-alt {
+    background-color: #fbbf24; /* Yellow */
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.card-alt:hover {
+    background-color: #f59e0b; /* Darker yellow on hover */
+}
