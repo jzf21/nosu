@@ -4,14 +4,10 @@ and this in read me ## Setup Instructions
 ```bash
 git clone https://github.com/Isabelle36/Nosu-CyberSec.git
 ```
-cd Nosu-Cybersec <br>
-then <br>
-cd frontend-cyber
 
 ### 2. Install Dependencies:
 ```bash
 npm install
-npm start  
 ```
 
 ### 3. Configure Environment Variables:
