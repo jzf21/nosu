@@ -2,7 +2,7 @@ and this in read me ## Setup Instructions
 
 ### 1. Clone the Repository  
 ```bash
-git clone https://github.com/Isabelle36/Nosu-CyberSec.git
+git clone https://github.com/jzf21/nosu.git
 ```
 
 ### 2. Install Dependencies:
